@@ -61,7 +61,36 @@ public class Empleado extends Persona implements Comparable<Empleado>{
 		 return Integer.compare(this.getLegajo(), o.getLegajo());
 		
 	}
-    
+//    Hashcode y Equals
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = super.hashCode();
+		result = prime * result + legajo;
+		result = prime * result + ((puesto == null) ? 0 : puesto.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Empleado other = (Empleado) obj;
+		if (legajo != other.legajo)
+			return false;
+		if (puesto == null) {
+			if (other.puesto != null)
+				return false;
+		} else if (!puesto.equals(other.puesto))
+			return false;
+		return true;
+	}
+	
     
     
     
