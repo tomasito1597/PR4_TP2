@@ -1,9 +1,6 @@
 package ejercicio1;
 import java.util.HashSet;
 import java.util.Iterator;
-
-
-
 import java.time.LocalDate;
 
 public class MainEjercicio1_d {
