@@ -27,26 +27,8 @@ public static void main(String[] args) {
 	                "maria.lopez@email.com"
 	        );
 	 
-        try {
-        	
-            Persona.exVerificarDNI(ejemplo1.getDni());
-            System.out.println("Persona agregada correctamente");
-            
-        } catch (ExVerificarDNI e) {
-        	
-            System.out.println("Persona no agregada por no verificar el DNI");
-            
-        }
+	 Persona.exVerificarDNI(ejemplo1.getDni());
+	 Persona.exVerificarDNI(ejemplo2.getDni());
 
-        try {
-        	
-            Persona.exVerificarDNI(ejemplo2.getDni());
-            System.out.println("Persona agregada correctamente");
-            
-        } catch (ExVerificarDNI e) {
-        	
-            System.out.println("Persona no agregada por no verificar el DNI");
-            
-        }
-    }
+	}
 }
