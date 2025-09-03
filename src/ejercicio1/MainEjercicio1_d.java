@@ -1,20 +1,12 @@
 package ejercicio1;
-import java.time.LocalDate;
+import java.util.HashSet;
 import java.util.Iterator;
-import java.util.TreeSet;
+import java.time.LocalDate;
 
-
-///CREAR UNA CLASE LLAMADA MainEjercicio1_c
-
-public class MainEjercicio1_c {
+public class MainEjercicio1_d {
 
 	public static void main(String[] args) {
-		
-		///CREAR 5 EMPLEADO Y GUARDARLOS DENTRO DE UN TreeSet
-		
-		TreeSet<Empleado> empleados = new TreeSet<>();
-		
-		empleados.add(new Empleado(
+		Empleado e1 = new Empleado(
 			    LocalDate.of(2003, 5, 15),
 			    "46123456",
 			    "Sofía",
@@ -24,9 +16,9 @@ public class MainEjercicio1_c {
 			    "Lavalle 320",
 			    "sofia.ramirez@gmail.com",
 			    "Programador"
-			));
+			);
 
-		empleados.add(new Empleado(
+			Empleado e2 = new Empleado(
 			    LocalDate.of(2004, 6, 10),
 			    "46234567",
 			    "Martín",
@@ -36,9 +28,9 @@ public class MainEjercicio1_c {
 			    "Av. Siempre Viva 742",
 			    "martin.fernandez@hotmail.com",
 			    "Programador"
-			));
+			);
 
-		empleados.add(new Empleado(
+			Empleado e3 = new Empleado(
 			    LocalDate.of(2003, 11, 25),
 			    "46345678",
 			    "Camila",
@@ -48,9 +40,9 @@ public class MainEjercicio1_c {
 			    "Independencia 1450",
 			    "camila.gomez@yahoo.com",
 			    "Programador"
-			));
+			);
 
-		empleados.add(new Empleado(
+			Empleado e4 = new Empleado(
 			    LocalDate.of(2004, 3, 30),
 			    "46456789",
 			    "Luciano",
@@ -60,9 +52,9 @@ public class MainEjercicio1_c {
 			    "Moreno 980",
 			    "luciano.pereyra@gmail.com",
 			    "Programador"
-			));
+			);
 
-		empleados.add(new Empleado(
+			Empleado e5 = new Empleado(
 			    LocalDate.of(2004, 9, 5),
 			    "46567890",
 			    "Valentina",
@@ -72,8 +64,21 @@ public class MainEjercicio1_c {
 			    "Belgrano 2210",
 			    "valentina.silva@hotmail.com",
 			    "Programador"
-			));
-		
+			);
+			HashSet<Empleado>ListaEmpleado= new HashSet<Empleado>();
+			ListaEmpleado.add(e1);
+			ListaEmpleado.add(e2);
+			ListaEmpleado.add(e3);
+			ListaEmpleado.add(e4);
+			ListaEmpleado.add(e5);
+
+			System.out.println("Listado de Empleados \n");		
+			Iterator<Empleado> it = ListaEmpleado.iterator();
+			while(it.hasNext())
+			{
+				Empleado p = (Empleado) it.next();
+				System.out.println(p.toString());
+			}
 	}
 
 }

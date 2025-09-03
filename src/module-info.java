@@ -4,5 +4,5 @@
 /**
  * 
  */
-module Grupo13_TP2 {
+module TP2_GRUPO_13 {
 }
