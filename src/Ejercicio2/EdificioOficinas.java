@@ -27,7 +27,8 @@ public class EdificioOficinas implements Edificio {
 
 	@Override
 	public String toString() {
-		return "EdificioOficinas [numOficinas=" + numOficinas + ", superficie=" + superficie + "]";
+	    return "Edificio de Oficinas | Nº Oficinas: " + numOficinas + 
+	           " | Superficie: " + superficie + " m2";
 	}
 	
 	
