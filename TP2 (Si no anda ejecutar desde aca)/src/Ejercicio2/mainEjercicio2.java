@@ -1,6 +1,7 @@
 package Ejercicio2;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class mainEjercicio2 {
 
@@ -13,6 +14,15 @@ public class mainEjercicio2 {
 		//AÑADO LOS 2 EDIFICIOS DE OFICINAS
 		arrayEdificio.add(new EdificioOficinas(20, 4500.75));
 		arrayEdificio.add(new EdificioOficinas(35, 8200.50));
+		
+		//AÑADO LO DE RECORRER Y MOSTRAR LOS DATOS CON ITERATOR
+        Iterator <Edificio> iterator_edificios = arrayEdificio.iterator();
+        while (iterator_edificios.hasNext()) {
+            System.out.println(iterator_edificios.next().toString());
+        }
+		
+		
+		
 	}
 
 }
