@@ -20,6 +20,18 @@ public class mainEjercicio2 {
         while (iterator_edificios.hasNext()) {
             System.out.println(iterator_edificios.next().toString());
         }
+//		for (Edificio e : arrayEdificio) {
+//		    System.out.println(e.toString());
+//
+//		    if (e instanceof Polideportivo) {
+//		        Polideportivo p = (Polideportivo) e;
+//		        System.out.println("→ Tipo de instalación: " + p.getTipoDeInstalacion());
+//		    } else if (e instanceof EdificioOficinas) {
+//		        EdificioOficinas o = (EdificioOficinas) e;
+//		        System.out.println("→ Número de oficinas: " + o.getNumOficinas()); // si agregás el getter
+//		    }
+//		}
+
 		
 		
 		

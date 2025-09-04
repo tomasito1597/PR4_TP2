@@ -15,6 +15,15 @@ public class EdificioOficinas implements Edificio {
 
 		return superficie;
 	}
+	
+
+	public int getNumOficinas() {
+		return numOficinas;
+	}
+
+	public void setNumOficinas(int numOficinas) {
+		this.numOficinas = numOficinas;
+	}
 
 	@Override
 	public String toString() {
