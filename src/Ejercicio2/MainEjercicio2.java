@@ -17,21 +17,11 @@ public class MainEjercicio2 {
 			arrayEdificio.add(new EdificioOficinas(35, 8200.50));
 			
 			//AÑADO LO DE RECORRER Y MOSTRAR LOS DATOS CON ITERATOR
-//	        Iterator <Edificio> iterator_edificios = arrayEdificio.iterator();
-//	        while (iterator_edificios.hasNext()) {
-//	            System.out.println(iterator_edificios.next().toString());
-//	        }
-			for (Edificio e : arrayEdificio) {
-			    System.out.println(e.toString());
-	
-			    if (e instanceof Polideportivo) {
-			        Polideportivo p = (Polideportivo) e;
-			        System.out.println("→ Tipo de instalación: " + p.getTipoDeInstalacion());
-			    } else if (e instanceof EdificioOficinas) {
-			        EdificioOficinas o = (EdificioOficinas) e;
-			        System.out.println("→ Número de oficinas: " + o.getNumOficinas()); // si agregás el getter
-			    }
-			}
+	        Iterator <Edificio> iterator_edificios = arrayEdificio.iterator();
+	        while (iterator_edificios.hasNext()) {
+	            System.out.println(iterator_edificios.next().toString());
+	        }
+
 
 			
 			
