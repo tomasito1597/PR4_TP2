@@ -1,10 +1,8 @@
 package Ejercicio2;
 
-public class Edificio {
-	private double superficie;
+public interface Edificio {
 	
-	public Edificio(double superficie) {
-		this.superficie = superficie;
-	}
+	double getSuperficieEdificio();
+
 
 }
